@@ -37,7 +37,7 @@ export default function Login() {
         console.log('Logging in...');
 
         try {
-            const res = await api.post('https://practice-backend-lilac.vercel.app/account/login', loginData);              
+            const res = await api.post('account/login', loginData);              
             if (res.status === 200) {
                 setIsAuthenticated(true);
                 navigate('/');
