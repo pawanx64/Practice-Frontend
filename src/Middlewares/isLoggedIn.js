@@ -1,17 +1,16 @@
-import axios from 'axios';
 import api from '../backendCall';
-const token = localStorage.getItem('token');
+
 // Function to check if the user is an loggedin
 export const isLoggedIn = async () => {
     try {
-        const res = await axios.get('https://practice-backend-lilac.vercel.app/account/isLoggedIn', {
-            headers: {
-                Authorization: `Bearer ${token}`
-            }
-        });
-        return res.status === 200;
+        const res = await api.get('account/isLoggedIn');
+        if (res.status === 200) {
+            return true;
+        } else {
+            return false;
+        }
     } catch (error) {
-        console.error("Error checking login status:", error);
+        console.error("Error checking admin status:", error);
         return false;
     }
 };

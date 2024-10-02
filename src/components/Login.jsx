@@ -4,6 +4,7 @@ import { useNavigate, Link } from "react-router-dom";
 import { toast } from 'react-toastify';
 import AuthContext from './AuthContext'
 import api from '../backendCall';
+import axios from 'axios';
 
 export default function Login() {
     const navigate = useNavigate();
@@ -37,7 +38,7 @@ export default function Login() {
         console.log('Logging in...');
 
         try {
-            const res = await axois.post('https://practice-backend-lilac.vercel.app/account/login', loginData);              
+            const res = await axios.post('https://practice-backend-lilac.vercel.app/account/login', loginData);              
             if (res.status === 200) {
                 setIsAuthenticated(true);
                 navigate('/');
