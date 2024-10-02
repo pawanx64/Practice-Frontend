@@ -49,7 +49,7 @@ export default function Navbar() {
 
   const handleLogout = async () => {
     try {
-      const res = await axios.get(`http://localhost:3000/account/logout`, { withCredentials: true });
+      const res = await axios.get(`https://practice-backend-lilac.vercel.app/account/logout`, { withCredentials: true });
       if (res.status === 200) {
         setIsAuthenticated(false);
         setIsAdmin(false);

@@ -37,7 +37,7 @@ export default function Signup() {
     e.preventDefault();
     
     try {
-      const response = await api.post('account/signup', signupData);
+      const response = await api.post('https://practice-backend-lilac.vercel.app/account/signup', signupData);
       if (response.status === 200) {
         toast.success('Signup Successful!');
         setIsAuthenticated(true);
