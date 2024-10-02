@@ -1,0 +1,80 @@
+.login-container {
+    width: 100%;
+    max-width: 400px; /* Limit the width of the form */
+    background-color: #ffffff; /* White background for the form */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.login-box {
+    padding: 20px;
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-header h2 {
+    color: #333; /* Dark text color */
+}
+
+.login-header p {
+    color: #666; /* Lighter text color */
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333; /* Dark text color for labels */
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px;
+    transition: border-color 0.3s; /* Smooth border color transition */
+}
+
+.input-group input:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none; /* Remove outline */
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Primary button color */
+    color: white; /* Text color for button */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.login-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.login-links {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.login-links a {
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.login-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
